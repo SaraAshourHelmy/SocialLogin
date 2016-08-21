@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SocialLogin</string>
+
+    <!--  Facebook Section -->
+    <string name="Facebook_APP_ID">111685902615975</string>
+
 </resources>

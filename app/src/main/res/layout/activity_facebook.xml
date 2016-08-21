@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="com.sara.FacebookLogin.FacebookActivity">
 
-
-   <LinearLayout
-       android:orientation="vertical"
-       android:id="@+id/lnr_facebook"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"/>
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"/>
 
     <TextView
-        android:id="@+id/tv_user_info"
+        android:id="@+id/tv_user_facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_margin="10dp"/>
 
-    <ImageView
-        android:id="@+id/img_user_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"/>
-
-</LinearLayout>
+</RelativeLayout>
